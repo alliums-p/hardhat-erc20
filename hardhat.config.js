@@ -28,6 +28,7 @@ module.exports = {
       url: "http://127.0.0.1:8545/",
       chainId: 31337,
       timeout: 400000,
+      blockConfirmations: 1,
     },
   },
   etherscan: {
@@ -44,5 +45,18 @@ module.exports = {
         },
       },
     ],
+  },
+  gasReporter: {
+    enabled: true,
+    outputFile: "gas-report.txt",
+    noColors: true,
+    currency: "USD",
+    coinmarketcap: COINMARKETCAP_API,
+    // token: "MATIC", // specify different token for different blockchain
+  },
+  namedAccounts: {
+    deployer: {
+      default: 0,
+    },
   },
 };

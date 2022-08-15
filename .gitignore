@@ -1,2 +1,7 @@
 .env
 node_modules/
+artifacts/
+cache/
+deployments/
+gas-report.txt
+yarn-error.log
